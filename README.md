@@ -1,5 +1,5 @@
 ## "Program to view champions information written in OOP"
-       The program has 3 options:
+       The program has 4 options:
           1. List Champions and view information of champion.
           2. Find Champion.
           3. Filter List Champion.
