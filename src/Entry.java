@@ -78,6 +78,17 @@ public class Entry {
             }
         }
     }
+    public static void fullListChamInfo(InfoCham[] infoChams)
+    {
+        System.out.printf("ID%-8sChampion%-12sClasses%-18sPosition\n", "", "", "");
+        System.out.println("---------------------------------------------------------------------");
+
+        for (int i = 1; i < infoChams.length; i++)
+        {
+            System.out.printf("%-10d%-20s%-24s%s\n", i,infoChams[i].getChampion(), infoChams[i].getClasses(), infoChams[i].getPosition());
+            System.out.println("---------------------------------------------------------------------");
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ConnectSQL connectSQL = new ConnectSQL();
@@ -93,6 +104,7 @@ public class Entry {
             System.out.println("1. List Champions and view information of champion");
             System.out.println("2. Find Champion");
             System.out.println("3. Filter List Champion");
+            System.out.println("4. Full list champion infomation (ID, Champion, Classes, Position)");
             System.out.println("0. Stop");
             System.out.println("-------------------------------------------");
 
@@ -159,6 +171,10 @@ public class Entry {
                     String ch = sc.nextLine();
                     filterWithLettersOfName(infoChams, ch);
                 }
+            }
+            if (choice == 4)
+            {
+                fullListChamInfo(infoChams);
             }
             if (choice == 0)
             {
