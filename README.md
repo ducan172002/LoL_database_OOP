@@ -3,5 +3,5 @@
           1. List Champions and view information of champion.
           2. Find Champion.
           3. Filter List Champion.
-          4.Full list champion infomation (ID, Champion, Classes, Position)
+          4. Full list champion infomation (ID, Champion, Classes, Position)
 The program accesses the LOL database so you can view champion information.
