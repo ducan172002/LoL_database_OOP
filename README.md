@@ -1,4 +1,4 @@
-"#Program to view champions information written in OOP" \n
+"#Program to view champions information written in OOP" <\s>
        "The program has 3 options:\n
        -1. List Champions and view information of champion.\n
        -2. Find Champion.\n
